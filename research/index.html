@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Research Projects</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/publications/index.html">Publications</a></li>
+            <li><a href="/research/index.html">Research</a></li>
+            <li><a href="https://engineering.jhu.edu/nsa/">NSALAB</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blurb">
+            <h1>CNN-BLSTM Seizure Detection</h1>
+            <p>
+                <img src="graphical_abstract.png" alt="CNN-BLSTM graphical abstract" height="200" />
+            </p>
+            <p>
+                In this project, I have designed a hybrid CNN-BLSTM model for seizure detection.
+                This model performs feature extraction from short windows of raw EEG signal using a convolutional neural
+                network.
+                After these features are extracted, a BLSTM layer is used for detecting seizures.
+                This hybrid combination is designed to combine powerful CNN based feature extraction with recurrent
+                neural network to identify seizures in long EEG recordings.
+            </p>
+
+            <h1>Localizing Seizure Onset</h1>
+            <p>
+                <img src="schematic3.png" alt="onset schematic" height="200" />
+            </p>
+
+            <p>
+                My research also focuses on the complimentary task of localizing onset zones in focal epilepsy.
+                To perform this task, I have worked to develop models of seizure propagation.
+                Using a hand designed network of connections, these models track seizure activity as it spreads
+                spatially through the EEG recording.
+                This work leverages approaches from both deep learning and graphical models to combine biologically
+                informed modeling with powerful neural network feature extraction.
+            </p>
+
+        </div><!-- /.blurb -->
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:jcraley2@jhu.edu">email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=7uaHhuIAAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://jcraley.github.io/craley_cv.pdf">CV</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
