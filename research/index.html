@@ -18,7 +18,8 @@
     </nav>
     <div class="container">
         <div class="blurb">
-            <h1>Research overview</h1>
+            <h1>Research</h1>
+            <h2>Overview</h2>
             <p>
                 My research work at Johns Hopkins has focused primarily on developing machine learning algorithms with clinical applications to epilepsy.
                 Specifically, my work focuses on the complimentary tasks of seizure detection and onset localization
@@ -28,9 +29,9 @@
                 It is my hope that these tools will one day assist clinicians in the treatment of epilepsy.
             </p>
 
-            <h1>Localizing Seizure Onset</h1>
+            <h2>Localizing Seizure Onset</h2>
             <p>
-                <img src="schematic3.png" alt="onset schematic" height="200" />
+                <img src="schematic3.png" alt="onset schematic" height="300" />
             </p>
 
             <p>
@@ -44,24 +45,30 @@
             </p>
 
             <p>
-                <img src="jh02_spread.gif" alt="Seizure Spreading" height="200" />
+                <img src="jh02_spread.gif" alt="Seizure Spreading" height="300" />
             </p>
 
-            <h1>Convolutional Neural Networks for EEG Analysis</h1>
+            <h2>Convolutional Neural Networks for EEG Analysis</h2>
             <p>
-                <img src="cnn2.png" alt="CNN for EEG" height="200" />
+                <img src="cnn2.png" alt="CNN for EEG" height="300" />
             </p>
+            <!-- <p>
+                Since the beginning of research into automated seizure detection, a wide variety of signal processing techniques have been applied to the problem.
+                These techniques focus on capturing specific seizure signal morphologies or differences in statistics between seizure and non-seizure baseline signals based on some prior hypothesis regarding these signals.
+                While hand designed features are capable of capturing many phenomenon in the EEG signal, the high degree of variety in epileptiform activity means that any one feature or set of features may come up lacking.
+            </p> -->
+
             <p>
-                Throughout, the history of computer aided EEG analysis many different signal processing techniques have been applied for identifying seizure activity.
-                In recent years, however, deep neural networks have proven themselves to be powerful tools for feature extraction.
-                In my work, I have investigated the application of Convolutional Neural Networks (CNNs) to the analysis of raw EEG signal.
-                I have applied CNNs to the entire multi-channel EEG recording for accurate seizure detection,
-                as well as at the level of individual channels to track seizure activity as it spreads.
+                In recent years deep neural networks have emerged as power feature extraction tools.
+                The ability of neural networks to learn latent representations directly from raw data has led to their application to a variety of domains.
+                In my work, I have investigated the application of Convolutional Neural Networks (CNNs) to the analysis of raw EEG signals.
+                I have applied CNNs to both the entire multi-channel EEG recording for accurate seizure detection,as well as to individual channels of the EEG to track seizure activity as it spreads.
+                In both instances, CNNs have demonstrated the ability to learn powerful representations of the EEG directly from the raw signal.
             </p>
 
-            <h1>End-to-End Deep Seizure Detection</h1>
+            <h2>End-to-End Deep Seizure Detection</h2>
             <p>
-                <img src="graphical_abstract.png" alt="CNN-BLSTM graphical abstract" height="200" />
+                <img src="graphical_abstract.png" alt="CNN-BLSTM graphical abstract" height="300" />
             </p>
             <p>
                 The clinical treatment of epilepsy requires the collection of EEG seizure recordings.
@@ -70,22 +77,21 @@
                 Analyzing these recordings is a time consuming process which requires a high degree of training.
                 Accurate machine learning based detection of seizures in these recordings has the potential to aid in
                 clinical review.
+            </p>
 
+            <p>
                 In order to perform fast and accurate seizure detection, I have designed a hybrid CNN Recurrent Neural Network (RNN) model for seizure detection.
                 This model performs feature extraction from short windows of raw EEG signal using a CNN.
-                While these features are discriminative individually, the ability to identify seizure activity as it
-                evolves over time increases the accuracy of machine learning methods.
-                To track this evolution, I have coupled the CNN network with a bidirectional long short-term memory
-                (BLSTM) network.
+                While these features can be classified independently, the ability to identify seizure activity as it evolves over time increases the accuracy of machine learning methods.
+                To track this evolution, I have coupled the CNN network with a bidirectional long short-term memory (BLSTM) network.
                 This hybrid CNN-BLSTM combines the ability to analyze the raw EEG signal at the level of short windows with the ability to learn the evolution of seizure activity to perform accurate seizure detection.
             </p>
 
-            <h1>
+            <h2>
                 Future Work
-            </h1>
+            </h2>
             <p>
-                While deep learning is a powerful tool in machine learning, building neural networks that incorporate
-                existing hypotheses of medical phenomenon is difficult.
+                While deep learning is a powerful tool in machine learning, building neural networks that incorporate existing hypotheses of medical phenomenon is difficult.
                 As such, my research has focused on using graphical modeling to develop models that encode the spread of focal epileptic seizures.
                 Designing end-to-end neural network models capable of determining the focal onset zone is an interesting problem calling for the development of new techinques in deep learning.
             </p>
