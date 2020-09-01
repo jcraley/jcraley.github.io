@@ -20,24 +20,12 @@
         <div class="blurb">
             <h1>Research overview</h1>
             <p>
-                My research work at Johns Hopkins has focused primarily on developing machine learning algorithms with
-                clinical applications to epilepsy.
-                Specifically, I have investigated using deep learning and signal processing for feature extraction from
-                electroencephalography (EEG) signals collected in long term epilepsy monitoring.
-                My work uses these features to perform two main tasks, seizure detection and focal onset localization.
-            </p>
-
-            <h1>Deep Seizure Detection</h1>
-            <p>
-                <img src="graphical_abstract.png" alt="CNN-BLSTM graphical abstract" height="200" />
-            </p>
-            <p>
-                In this project, I have designed a hybrid CNN-BLSTM model for seizure detection.
-                This model performs feature extraction from short windows of raw EEG signal using a convolutional neural
-                network.
-                After these features are extracted, a BLSTM layer is used for detecting seizures.
-                This hybrid combination is designed to combine powerful CNN based feature extraction with recurrent
-                neural network to identify seizures in long EEG recordings.
+                My research work at Johns Hopkins has focused primarily on developing machine learning algorithms with clinical applications to epilepsy.
+                Specifically, my work focuses on the complimentary tasks of seizure detection and onset localization
+                from electroencephalography (EEG) recordings.
+                Using techiniques from deep learning, graphical modeling, and signal processing, I have developed
+                algorithms to analyze raw EEG signals for seizure content.
+                It is my hope that these tools will one day assist clinicians in the treatment of epilepsy.
             </p>
 
             <h1>Localizing Seizure Onset</h1>
@@ -46,13 +34,72 @@
             </p>
 
             <p>
-                My research also focuses on the complimentary task of localizing onset zones in focal epilepsy.
-                To perform this task, I have worked to develop models of seizure propagation.
+                In focal epilepsy, localizing the onset of seizure activity is an important step in the treatment process.
+                Depending on the location of the onset zone, treatment options may vary.
+                In my work at JHU, I have developed models capable of determining the onset zone from EEG seizure recordings.
+                This work uses graphical modeling to design models capable of tracking seizure propagation.
                 Using a hand designed network of connections, these models track seizure activity as it spreads
                 spatially through the EEG recording.
-                This work leverages approaches from both deep learning and graphical models to combine biologically
-                informed modeling with powerful neural network feature extraction.
+                By tracking the spread of seizure activity, the focal onset zone can be determined.
             </p>
+
+            <p>
+                <img src="jh02_spread.gif" alt="Seizure Spreading" height="200" />
+            </p>
+
+            <h1>Convolutional Neural Networks for EEG Analysis</h1>
+            <p>
+                <img src="cnn2.png" alt="CNN for EEG" height="200" />
+            </p>
+            <p>
+                Throughout, the history of computer aided EEG analysis many different signal processing techniques have been applied for identifying seizure activity.
+                In recent years, however, deep neural networks have proven themselves to be powerful tools for feature extraction.
+                In my work, I have investigated the application of Convolutional Neural Networks (CNNs) to the analysis of raw EEG signal.
+                I have applied CNNs to the entire multi-channel EEG recording for accurate seizure detection,
+                as well as at the level of individual channels to track seizure activity as it spreads.
+            </p>
+
+            <h1>End-to-End Deep Seizure Detection</h1>
+            <p>
+                <img src="graphical_abstract.png" alt="CNN-BLSTM graphical abstract" height="200" />
+            </p>
+            <p>
+                The clinical treatment of epilepsy requires the collection of EEG seizure recordings.
+                As seizures can occur infrequently, days long EEG recording in the epilepsy monitoring unit may be
+                needed to obtain an adequate number of seizures.
+                Analyzing these recordings is a time consuming process which requires a high degree of training.
+                Accurate machine learning based detection of seizures in these recordings has the potential to aid in
+                clinical review.
+
+                In order to perform fast and accurate seizure detection, I have designed a hybrid CNN Recurrent Neural Network (RNN) model for seizure detection.
+                This model performs feature extraction from short windows of raw EEG signal using a CNN.
+                While these features are discriminative individually, the ability to identify seizure activity as it
+                evolves over time increases the accuracy of machine learning methods.
+                To track this evolution, I have coupled the CNN network with a bidirectional long short-term memory
+                (BLSTM) network.
+                This hybrid CNN-BLSTM combines the ability to analyze the raw EEG signal at the level of short windows with the ability to learn the evolution of seizure activity to perform accurate seizure detection.
+            </p>
+
+            <h1>
+                Future Work
+            </h1>
+            <p>
+                While deep learning is a powerful tool in machine learning, building neural networks that incorporate
+                existing hypotheses of medical phenomenon is difficult.
+                As such, my research has focused on using graphical modeling to develop models that encode the spread of focal epileptic seizures.
+                Designing end-to-end neural network models capable of determining the focal onset zone is an interesting problem calling for the development of new techinques in deep learning.
+
+                While EEG seizure recordings are often the first modality used for epileptic onset zone localization,
+                further refinement of this localization requires different imaging and recording modalities.
+                MRI and PET scanning can allow for the identification of any physiological abnormalities that might
+                indicate a likely onset zone.
+                Furthermore, seizure semiology can offer an indication of the likely onset zone, as seizures originating
+                from different areas of the brain manifest different clinical symptoms.
+                Developing multi-modal models capable of fusing information from these different sources can further aid
+                in accurate onset zone localization.
+            </p>
+
+
 
         </div><!-- /.blurb -->
     </div><!-- /.container -->
